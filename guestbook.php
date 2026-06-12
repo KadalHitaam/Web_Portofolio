@@ -92,7 +92,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="col-md-8">
                 <div class="card shadow-sm p-4" style="border-radius: 15px; border: none;">
                     <h4>Data Pengunjung</h4>
-                    <table class="table table-striped mt-3" id="tabelTamu">
+                    <a href="export_pdf.php" target="_blank" class="btn btn-danger btn-sm mb-3">📄 Ekspor ke PDF</a>
+
+                    <table class="table table-striped mt-3" id="tabelTamu"></table>
                         <thead>
                             <tr>
                                 <th>No.</th>
