@@ -31,27 +31,21 @@ Berikut adalah visualisasi alur dan antarmuka dari aplikasi web **MyProfile**:
 
 ### 1. Halaman Utama (Landing Page)
 Tampilan awal yang menyambut pengunjung saat pertama kali membuka website.
-![Landing Page](Screenshot%202026-06-12%20080212.png)
 
 ### 2. Halaman Login
 Form otentikasi sistem sebelum masuk ke area dashboard.
-![Login Page](Screenshot%202026-06-12%20080221.png)
 
 ### 3. Dashboard Admin / Profil
 Menampilkan data sekilas profil pemilik website setelah berhasil login.
-![Dashboard](Screenshot%202026-06-12%20080247.png)
 
 ### 4. Manajemen Buku Tamu (Guestbook)
 Fasilitas bagi pengunjung untuk mengisi kehadiran, tanda tangan digital, dan mengunggah file pendukung.
-![Buku Tamu](Screenshot%202026-06-12%20080256.png)
 
 ### 5. Detail Data Pengunjung
 Modal pop-up yang menampilkan berkas unggahan dan hasil tanda tangan digital pengunjung.
-![Detail Pengunjung](Screenshot%202026-06-12%20080308.png)
 
 ### 6. Galeri Multimedia
 Ruang interaktif untuk memutar video anime dan musik favorit secara langsung di browser.
-![Multimedia](Screenshot%202026-06-12%20080413.jpg)
 
 ---
 
@@ -59,14 +53,11 @@ Ruang interaktif untuk memutar video anime dan musik favorit secara langsung di 
 
 ### Struktur Tabel MySQL (`db_myprofile`)
 Projek ini didukung oleh database relasional dengan 3 tabel utama: `buku_tamu`, `file_tamu`, dan `users`.
-![Database phpMyAdmin](Screenshot%202026-06-12%20080612.jpg)
 
 ### Lingkungan Pengembangan (Development Environment)
 - **Code Editor:** Visual Studio Code (VS Code) dengan struktur folder yang rapi (`assets`, `images`, `uploads`).
 - **Server Lokal:** Laragon (`webporto.test`).
 - **Version Control:** Git terintegrasi langsung dengan GitHub (`KadalHitaam/Web_Portofolio.git`).
-![VS Code Environment](Screenshot%202026-06-12%20082403.png)
-
 ---
 
 ## ⚙️ Teknologi yang Digunakan
