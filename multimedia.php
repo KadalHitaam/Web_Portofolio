@@ -27,7 +27,7 @@ if($_SESSION['status'] != "sudah_login"){
         <div class="row justify-content-center">
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm p-3" style="border-radius: 15px; border:none;">
-                    <h5>Video Perkenalan / Hobi</h5>
+                    <h5>Anime yang aku suka</h5>
                     <video width="100%" controls style="border-radius: 10px;">
                         <source src="./assets/kiminonawa.mp4" type="video/mp4">
                         Browser kamu tidak mendukung pemutar video.
