@@ -10,7 +10,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Cari username di tabel users
-$query = mysqli_query($koneksi, "SELECT * FROM users WHERE username='$username'");
+$query = mysqli_query($koneksi, "SELECT * FROM users_naufal_2430511010 WHERE username='$username'");
 $cek = mysqli_num_rows($query);
 
 // Jika username ditemukan

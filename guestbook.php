@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $ttd_base64 = $_POST['ttd_base64']; // Mengambil data gambar TTD dari input hidden
 
     // 1. Simpan ke tabel buku_tamu
-    $query_tamu = mysqli_query($koneksi, "INSERT INTO buku_tamu (nama, status, tanda_tangan) VALUES ('$nama', '$status', '$ttd_base64')");
+    $query_tamu = mysqli_query($koneksi, "INSERT INTO buku_tamu_naufal_2430511010 (nama, status, tanda_tangan) VALUES ('$nama', '$status', '$ttd_base64')");
     
     if ($query_tamu) {
         // Ambil ID tamu yang baru saja masuk
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 move_uploaded_file($tmp_name, $folder_tujuan); // Pindahkan file ke folder uploads
                 
                 // Simpan nama file ke tabel file_tamu
-                mysqli_query($koneksi, "INSERT INTO file_tamu (id_tamu, nama_file) VALUES ('$id_tamu', '$nama_file')");
+                mysqli_query($koneksi, "INSERT INTO file_tamu_naufal_2430511010 (id_tamu, nama_file) VALUES ('$id_tamu', '$nama_file')");
             }
         }
         echo "<script>alert('Data berhasil disimpan!'); window.location='guestbook.php';</script>";
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <?php
                             // Mengambil data dari database
                             $no = 1;
-                            $query_tampil = mysqli_query($koneksi, "SELECT * FROM buku_tamu ORDER BY id DESC");
+                            $query_tampil = mysqli_query($koneksi, "SELECT * FROM buku_tamu_naufal_2430511010 ORDER BY id DESC");
                             while ($row = mysqli_fetch_assoc($query_tampil)) {
                             ?>
                             <tr>
@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                 <?php
                                                 // Ambil file terkait dari tabel file_tamu
                                                 $id_tamu_sekarang = $row['id'];
-                                                $query_file = mysqli_query($koneksi, "SELECT * FROM file_tamu WHERE id_tamu = '$id_tamu_sekarang'");
+                                                $query_file = mysqli_query($koneksi, "SELECT * FROM file_tamu_naufal_2430511010 WHERE id_tamu = '$id_tamu_sekarang'");
                                                 while($file = mysqli_fetch_assoc($query_file)){
                                                     echo "<li><a href='uploads/".$file['nama_file']."' target='_blank'>".$file['nama_file']."</a></li>";
                                                 }

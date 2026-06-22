@@ -52,7 +52,7 @@ Ruang interaktif untuk memutar video anime dan musik favorit secara langsung di 
 ## 🛠️ Struktur Database & Kode Sumber
 
 ### Struktur Tabel MySQL (`db_myprofile`)
-Projek ini didukung oleh database relasional dengan 3 tabel utama: `buku_tamu`, `file_tamu`, dan `users`.
+Projek ini didukung oleh database relasional dengan 3 tabel utama: `buku_tamu_naufal_2430511010`, `file_tamu_naufal_2430511010`, dan `users_naufal_2430511010`.
 
 ### Lingkungan Pengembangan (Development Environment)
 - **Code Editor:** Visual Studio Code (VS Code) dengan struktur folder yang rapi (`assets`, `images`, `uploads`).

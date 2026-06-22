@@ -46,7 +46,7 @@ include 'koneksi.php';
         <tbody>
             <?php
             $no = 1;
-            $query_tampil = mysqli_query($koneksi, "SELECT * FROM buku_tamu ORDER BY id ASC");
+            $query_tampil = mysqli_query($koneksi, "SELECT * FROM buku_tamu_naufal_2430511010 ORDER BY id ASC");
             while ($row = mysqli_fetch_assoc($query_tampil)) {
             ?>
             <tr>
